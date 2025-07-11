@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LaporanKaryawanForm</class>
+ <widget class="QWidget" name="LaporanKaryawanForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>649</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Laporan Karyawan</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QWidget {
+        font-family: 'Segoe UI';
+        font-size: 10.5pt;
+        background-color: #f5f5f5;
+    }
+    QLabel {
+        font-weight: bold;
+        font-size: 11pt;
+    }
+    QPushButton {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 6px 12px;
+    }
+    QPushButton:hover {
+        background-color: #0056b3;
+    }
+    QLineEdit, QDateEdit, QDoubleSpinBox {
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 4px;
+    }
+    QTableWidget {
+        background-color: white;
+        border: 1px solid #ccc;
+        gridline-color: #999;
+    }
+   </string>
+  </property>
+  <widget class="QLabel" name="labelNama">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>141</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nama Karyawan</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="namaKaryawanLE">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>20</y>
+     <width>451</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTanggal">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tanggal Laporan</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="TanggalLaporanEdit">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>60</y>
+     <width>451</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTotal">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>161</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Total Penghasilan</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="TotalDS">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>100</y>
+     <width>451</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>2</number>
+   </property>
+   <property name="maximum">
+    <double>999999999.990000009536743</double>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnhitung">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>100</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Hitung</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnhapus">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>150</y>
+     <width>100</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Hapus</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnprint">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>150</y>
+     <width>150</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>621</width>
+     <height>280</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

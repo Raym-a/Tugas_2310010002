@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>613</width>
+    <height>639</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form Pemesanan</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QWidget {
+        background-color: #f4f4f4;
+        font-family: 'Segoe UI';
+        font-size: 10.5pt;
+    }
+    QPushButton {
+        background-color: #5A9;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 6px;
+    }
+    QPushButton:hover {
+        background-color: #4A8;
+    }
+    QLineEdit, QComboBox, QDateEdit, QTimeEdit, QDoubleSpinBox {
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 4px;
+    }
+    QLabel {
+        font-weight: bold;
+        font-size: 11pt;
+    }
+    QTableWidget {
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+    }
+   </string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>591</width>
+     <height>369</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <property name="horizontalSpacing">
+     <number>15</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>18</number>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="namaPelangganLabel">
+      <property name="text">
+       <string>Nama Pelanggan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="namaPelangganLE"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="layananLabel">
+      <property name="text">
+       <string>Layanan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="layananCB"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="TanggalPesanLabel">
+      <property name="text">
+       <string>Tanggal Pesan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QDateEdit" name="TanggalPesanLE">
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+      <property name="date">
+       <date>
+        <year>2025</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="JamPesanLabel">
+      <property name="text">
+       <string>Jam Pesan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QTimeEdit" name="JamPesanTE"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="NomorHp">
+      <property name="text">
+       <string>Nomor HP</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="noHPLE"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="pilihBarberLabel">
+      <property name="text">
+       <string>Pilih Barber</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QComboBox" name="PilihBarberCB"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="Harga">
+      <property name="text">
+       <string>Harga</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QDoubleSpinBox" name="hargaSB">
+      <property name="decimals">
+       <number>2</number>
+      </property>
+      <property name="maximum">
+       <double>99999.990000000005239</double>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btnsimpan">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Simpan</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnhapus">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>380</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hapus</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnedit">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>380</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnbersih">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>380</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Bersih</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tblpemesanan">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>440</y>
+     <width>591</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
